@@ -14,6 +14,7 @@
 		794A7C062B91F86B002BA1B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 794A7C052B91F86B002BA1B5 /* Assets.xcassets */; };
 		794A7C092B91F86B002BA1B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 794A7C072B91F86B002BA1B5 /* LaunchScreen.storyboard */; };
 		794A7C162B91FA80002BA1B5 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794A7C152B91FA80002BA1B5 /* DataStore.swift */; };
+		794A7C182B91FB0D002BA1B5 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794A7C172B91FB0D002BA1B5 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		794A7C082B91F86B002BA1B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		794A7C0A2B91F86B002BA1B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		794A7C152B91FA80002BA1B5 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		794A7C172B91FB0D002BA1B5 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 		794A7C132B91F8E1002BA1B5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				794A7C172B91FB0D002BA1B5 /* Person.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				794A7C182B91FB0D002BA1B5 /* Person.swift in Sources */,
 				794A7C012B91F86A002BA1B5 /* ViewController.swift in Sources */,
 				794A7C162B91FA80002BA1B5 /* DataStore.swift in Sources */,
 				794A7BFD2B91F86A002BA1B5 /* AppDelegate.swift in Sources */,
