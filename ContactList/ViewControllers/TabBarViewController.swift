@@ -7,11 +7,21 @@
 
 import UIKit
 
-class TabBarViewController: UITabBarController {
+final class TabBarViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        setupViewControllers()
+    }
+    
+    private func setupViewControllers() {
+        let persons = Person.getContactList()
+        
+        let contactListVC = viewControllers?.first as? ContactListViewController
+        let sectionTableVC = viewControllers?.last as? SectionTableViewController
+        
+        contactListVC?.persons = persons
+        sectionTableVC?.persons = persons
     }
 }
 
