@@ -17,7 +17,7 @@ struct Person {
     
     static func getContactList() -> [Person] {
         var persons: [Person] = []
-        let dataStore = DataStore()
+        let dataStore = DataStore.chared
         
         let names = dataStore.names.shuffled()
         let surnames = dataStore.surnames.shuffled()

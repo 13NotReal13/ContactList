@@ -7,6 +7,8 @@
 
 final class DataStore {
     
+    static let chared = DataStore()
+    
     let names = [
         "John",
         "Mary",
@@ -58,4 +60,6 @@ final class DataStore {
         "customer@example.com",
         "marketing@example.com"
     ]
+    
+    private init() {}
 }
