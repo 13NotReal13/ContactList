@@ -10,14 +10,10 @@ import UIKit
 final class SectionTableViewController: UITableViewController {
     
     var persons: [Person]!
-
+    
     // MARK: - Table view data source
     override func numberOfSections(in tableView: UITableView) -> Int {
         persons.count
-    }
-    
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        persons[section].fuulname
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -38,7 +34,32 @@ final class SectionTableViewController: UITableViewController {
         return cell
     }
     
+}
+
+// MARK: UITableViewDelegate
+extension SectionTableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let contentView = UIView()
+        contentView.backgroundColor = .gray
+        
+        let fullnameLabel = UILabel(
+            frame: CGRect(
+                x: 16,
+                y: 3,
+                width: tableView.frame.width - 32,
+                height: 20
+            )
+        )
+        
+        fullnameLabel.text = persons[section].fuulname
+        fullnameLabel.textColor = .white
+        fullnameLabel.font = UIFont.boldSystemFont(ofSize: 17)
+        
+        contentView.addSubview(fullnameLabel)
+        return contentView
     }
 }
